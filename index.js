@@ -11,4 +11,4 @@ app.use(express.static(path.join(__dirname, 'public')))
 app.get('/', routeHome.getHome)
 
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
