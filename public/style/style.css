@@ -13,7 +13,7 @@
     --body-font: 'Dosis', sans-serif;
     --main-font-color-dark: #252525;
     --secondary-font-color: #c59d5f;
-    --body-font-color: white;
+    --body-font-color: black;
 }
 
 html {
@@ -153,7 +153,7 @@ header {
 .hero {
     width: 100%;
     height: 100vh;
-    background: url('../images/others/spmUM.gif') no-repeat center center fixed;
+    background: url('../images/others/Chunky\ Chemistry\ GIF.gif') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
