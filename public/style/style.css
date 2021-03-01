@@ -153,7 +153,8 @@ header {
 .hero {
     width: 100%;
     height: 100vh;
-    background: url('../images/others/Chunky\ Chemistry\ GIF.gif') no-repeat center center fixed;
+    background-color: whitesmoke;
+    /* background: url('../images/others/owl-clip-art-30.png') no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -218,4 +219,29 @@ header {
     margin-bottom: 1.2rem;
     letter-spacing: 1px;
     margin-right: -3px;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%)
+}
+
+.btn-grad {
+    margin: 10px auto;
+    width: 50%;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }

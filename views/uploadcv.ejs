@@ -1,0 +1,16 @@
+<%- include('includes/skeletonHead.ejs') %>
+    <link rel="stylesheet" href="style/upload.css">
+    <div class="contact-us">
+        <form action="#">
+            <label for="customerName">NAME <em>&#x2a;</em></label>
+            <input id="customerName" name="customerName" required="" type="text" />
+            <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
+            <input id="customerEmail" name="customerEmail" required="" type="email" />
+            <label for="customerPhone">PHONE <em>&#x2a;</em></label>
+            <input required id="customerPhone" name="customerPhone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" type="tel" />
+            <label for="cv">WORD FILE <em>&#x2a;</em> (Chon file word hoac pdf)</label>
+            <input type="file" id="cv" name="cv" required>
+            <button id="customerOrder">SUBMIT</button>
+        </form>
+    </div>
+    <%- include('includes/skeletonFoot.ejs') %>
