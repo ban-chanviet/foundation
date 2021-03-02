@@ -5,6 +5,10 @@
     width: 80%;
 }
 
+.bigboi p {
+    font-size: 2rem;
+}
+
 .support {
     font-size: 2rem;
     text-align: center;
@@ -19,9 +23,19 @@
 }
 
 .biggerText {
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 1.6rem !important;
 }
 
 li {
     list-style: none;
+}
+
+.biggerText h1 {
+    margin-bottom: 20px;
+}
+
+.biggerText ul {
+    font-size: 3rem !important;
 }
