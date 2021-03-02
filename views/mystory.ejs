@@ -1,0 +1,31 @@
+<%- include('includes/skeletonHead.ejs') %>
+    <link rel="stylesheet" href="style/mystory.css">
+    <div class="bigboi">
+        <div>
+            <h1>why</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pharetra sodales nunc, id pellentesque metus rhoncus in. Proin euismod dignissim lectus, ut volutpat nisl sagittis eget. Sed lectus arcu, bibendum sit amet felis et, maximus ornare eros.
+                Fusce vehicula purus at nisl lacinia, at faucibus mi mattis. Praesent eleifend pretium suscipit. Morbi egestas porttitor porttitor. Aliquam pharetra elit et convallis faucibus. Sed ultrices, nulla in bibendum dictum, diam ante laoreet
+                mi, sed molestie dolor tellus vel justo. <br>Morbi eu sapien eget mauris consequat dignissim sit amet a lectus. Quisque rutrum vehicula nibh, quis posuere ex. Nam id turpis est. Vestibulum eleifend gravida aliquet. Donec
+                non molestie lectus, et viverra dolor. Maecenas lorem elit, vulputate quis sapien nec, mollis laoreet tellus. Suspendisse ut varius leo. Nullam enim ante, volutpat ac aliquam nec, egestas nec lacus. Maecenas sed nibh magna. Praesent eleifend
+                nunc lacus, vel placerat purus fermentum quis. Suspendisse fermentum rutrum tellus, non laoreet nisi cursus quis. Fusce non justo ut libero gravida egestas id at tellus. Vivamus sem sapien, commodo in finibus ut, lacinia at lorem. Suspendisse
+                vitae tellus ut orci bibendum fringilla eu ut metus. Vestibulum id molestie libero. Curabitur sapien nulla, iaculis at urna at, finibus ultricies neque.
+            </p>
+        </div>
+        <div class="biggerText">
+            <h1>student that i helped</h1>
+            <ul>
+                <% students.forEach(function(student) { %>
+                    <li> name:
+                        <%= student.name %>, year:
+                            <%= student.year %>
+                    </li>
+                    <% }); %>
+            </ul>
+        </div>
+        <h1><a href="/uploadcv">get your scholarship now</a> or
+            <a href="/support">support us</a>
+        </h1>
+    </div>
+
+    <%- include('includes/skeletonFoot.ejs') %>

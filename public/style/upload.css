@@ -55,8 +55,7 @@ textarea {
 }
 
 button {
-    display: block;
-    float: right;
+    margin: auto;
     line-height: 24pt;
     padding: 0 20px;
     border: none;
@@ -69,9 +68,7 @@ button {
 }
 
 button:hover {
-    background: inherit;
-    color: #f45702;
-    border-bottom: 2px solid #f45702;
+    cursor: pointer;
 }
 
  ::selection {
@@ -88,4 +85,50 @@ textarea:-webkit-autofill:focus {
     -webkit-text-fill-color: #2A293E;
     -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
     transition: background-color 5000s ease-in-out 0s;
+}
+
+#apply {
+    border-radius: 10px;
+    background-color: #302c2b;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.labelForButton {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#cv {
+    border: none;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.upload-btn-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
 }

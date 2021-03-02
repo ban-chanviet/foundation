@@ -1,0 +1,27 @@
+.bigboi {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin: auto;
+    width: 80%;
+}
+
+.support {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.support p {
+    font-size: 2rem;
+}
+
+.support h1 {
+    font-size: 1.6rem;
+}
+
+.biggerText {
+    font-size: 1.6rem !important;
+}
+
+li {
+    list-style: none;
+}
