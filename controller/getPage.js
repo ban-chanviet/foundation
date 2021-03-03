@@ -13,6 +13,9 @@ exports.getall = (req, res) => {
         case '/uploadcv':
             res.render('uploadcv')
             break;
+        case '/uploadcval':
+            res.render('uploadcval')
+            break
         case '/about':
             res.render('about')
             break;

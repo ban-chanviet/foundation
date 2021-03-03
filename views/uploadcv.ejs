@@ -1,7 +1,8 @@
 <%- include('includes/skeletonHead.ejs') %>
     <link rel="stylesheet" href="style/upload.css">
+
     <div class="contact-us">
-        <form action="#">
+        <form action="/uploadcv" method="POST" enctype="multipart/form-data">
             <label for="name">name <em>&#x2a;</em></label>
             <input id="name" name="name" required="" type="text" />
             <label for="email">email <em>&#x2a;</em></label>
@@ -10,7 +11,7 @@
             <input required id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" type="tel" />
             <div class="upload-btn-wrapper">
                 <button class="btn">choose your .word file</button>
-                <input type="file" name="myfile" required/>
+                <input type="file" name="sampleFile" required/>
             </div>
             <button id="apply">submit</button>
         </form>
