@@ -85,6 +85,7 @@ ul {
 
 .active {
     display: block;
+    margin-top: 50px;
 }
 
 .hideImg {
