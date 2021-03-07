@@ -5,6 +5,7 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
+        "devStart": "nodemon index.js",
         "start": "node index.js"
     },
     "keywords": [],
@@ -19,8 +20,10 @@
         "google-auth-library": "^7.0.2",
         "google-drive-uploader": "^0.2.3",
         "googleapis": "^67.1.1",
+        "jquery": "^3.6.0",
         "mime-types": "^2.1.29",
         "multer": "^1.4.2",
+        "nodemon": "^2.0.7",
         "readable-stream": "^3.6.0",
         "readline": "^1.3.0",
         "tiny-invariant": "^1.1.0"

@@ -4,20 +4,23 @@ exports.getall = (req, res) => {
         case '/':
             res.render('home')
             break;
-        case '/story':
-            res.render('mystory', { students: [{ name: 'long', year: '2021-2022' }] })
+        case '/chuyencu':
+            res.render('chuyencu', { students: [{ name: 'long', year: '2021-2022' }] })
             break;
-        case '/support':
+        case '/gopsuc':
             res.render('support')
             break;
-        case '/uploadcv':
+        case '/ungtuyen':
             res.render('uploadcv')
             break;
         case '/uploadcval':
             res.render('uploadcval')
             break
-        case '/about':
-            res.render('about')
+        case '/gioithieu':
+            res.render('gioithieu')
+            break;
+        case '/thankyou':
+            res.render('thankyou')
             break;
         default:
             res.render('404')

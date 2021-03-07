@@ -3,15 +3,16 @@
 
     <div class="contact-us">
         <form action="/uploadcv" method="POST" enctype="multipart/form-data">
-            <label for="name">name <em>&#x2a;</em></label>
+            <label for="name">tên <em>&#x2a;</em></label>
             <input id="name" name="name" required="" type="text" />
             <label for="email">email <em>&#x2a;</em></label>
             <input id="email" name="email" required="" type="email" />
-            <label for="phone">phone <em>&#x2a;</em></label>
+            <label for="phone">số điện thoại <em>&#x2a;</em></label>
             <input required id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" type="tel" />
-            <div class="upload-btn-wrapper">
-                <button class="btn">choose your .word file</button>
-                <input type="file" name="sampleFile" required/>
+            <label for="sampleFile">chọn file .doc, .docx, hoặc pdf <em>&#x2a;</em></label>
+            <div class="file-upload-wrapper">
+
+                <input name="sampleFile" type="file" class="file-upload-field" value="">
             </div>
             <button id="apply">submit</button>
         </form>

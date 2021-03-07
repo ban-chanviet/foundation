@@ -1,11 +1,12 @@
-//select element
-const selectElement = function(element) {
-    return document.querySelector(element)
-}
+let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
 
-let menuToggler = selectElement('.menu-toggle')
-let body = selectElement('body')
+navBarToggle.addEventListener("click", function() {
+    mainNav.classList.toggle("active");
+    document.getElementById('hideNh').classList.toggle('hideImg')
+});
 
-menuToggler.addEventListener('click', () => {
-    body.classList.toggle('open')
-})
+
+$("form").on("change", ".file-upload-field", function() {
+    $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
+});

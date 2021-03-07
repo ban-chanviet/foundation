@@ -1,8 +1,12 @@
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .contact-us {
-    padding: 100px 50px;
-    width: 100%;
-    margin: auto;
-    box-sizing: border-box;
+    padding: 50px;
 }
 
 label,
@@ -12,7 +16,7 @@ textarea {
     width: 100%;
     font-size: 12pt;
     line-height: 24pt;
-    font-family: var(--body-font);
+    font-family: "Spartan";
 }
 
 input {
@@ -55,80 +59,84 @@ textarea {
 }
 
 button {
-    margin: auto;
+    display: block;
+    float: right;
     line-height: 24pt;
     padding: 0 20px;
     border: none;
-    background: #f45702;
     color: white;
     letter-spacing: 2px;
     transition: 0.2s all ease-in-out;
     border-bottom: 2px solid transparent;
     outline: none;
+    border-radius: 10px;
+    background-color: rgb(85, 85, 85);
 }
 
 button:hover {
     cursor: pointer;
 }
 
- ::selection {
+::selection {
     background: #ffc7b8;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus {
-    border: 1px solid #6bd4b1;
-    -webkit-text-fill-color: #2A293E;
-    -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
-    transition: background-color 5000s ease-in-out 0s;
-}
-
-#apply {
-    border-radius: 10px;
-    background-color: #302c2b;
-    margin: auto;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.labelForButton {
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-    cursor: pointer;
-    margin-top: 1rem;
-}
-
-#cv {
-    border: none;
-}
-
-.upload-btn-wrapper {
+.file-upload-wrapper {
     position: relative;
-    overflow: hidden;
-    display: inline-block;
-    text-align: center;
-}
-
-.btn {
-    border: 2px solid gray;
-    color: gray;
-    background-color: white;
-    padding: 8px 20px;
-    border-radius: 8px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-.upload-btn-wrapper input[type=file] {
+.file-upload-wrapper:after {
+    content: attr(data-text);
+    font-size: 18px;
     position: absolute;
-    left: 0;
     top: 0;
+    left: 0;
+    background: #fff;
+    padding: 10px 15px;
+    display: block;
+    width: calc(100% - 40px);
+    pointer-events: none;
+    z-index: 20;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px 10px 10px 5px;
+    font-weight: 300;
+}
+
+.file-upload-wrapper:before {
+    content: "upload";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 60px;
+    background: rgb(85, 85, 85);
+    color: #fff;
+    font-weight: 700;
+    z-index: 25;
+    font-size: 16px;
+    line-height: 60px;
+    padding: 0 15px;
+    pointer-events: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.file-upload-wrapper input {
     opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    width: 100%;
 }
