@@ -32,3 +32,8 @@
 header nav img {
     display: none;
 }
+
+.removeStyleA {
+    text-decoration: none;
+    color: white;
+}
