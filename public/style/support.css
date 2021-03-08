@@ -213,7 +213,7 @@ h4 a {
 .chart1 {
     width: 70%;
     margin-top: 20px;
-    margin-right: 30px;
+    margin-right: unset;
 }
 
 .firstBlock {
@@ -230,6 +230,7 @@ h4 a {
     }
     .chart1 {
         margin-top: unset;
+        margin-right: 30px;
     }
 }
 
