@@ -62,14 +62,20 @@
                         <input id="name" name="name" required="" type="text" />
                         <label for="email">email <em>&#x2a;</em></label>
                         <input id="email" name="email" required="" type="email" />
-                        <label for="phone">số điện thoại <em>&#x2a;</em></label>
-                        <input required id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" type="tel" />
+                        <label for="phone">mã số sinh viên <em>&#x2a;</em></label>
+                        <input required id="phone" name="phone" />
                         <label for="sampleFile">chọn file .doc, .docx, hoặc pdf <em>&#x2a;</em></label>
                         <div class="file-upload-wrapper">
-
                             <input name="sampleFile" type="file" class="file-upload-field" value="">
                         </div>
+                        <div class="alignAgain">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="okay" required>
+                            <label for="vehicle1"> đồng ý vấn đề thông tin cá nhân</label><br>
+                        </div>
                         <button id="apply">ứng tuyển</button>
+                        <div style="padding: 10px;">
+                            <label for="dummy"><em>&#x2a;</em> tất cả thông tin cá nhân chỉ dùng để xét duyệt học bổng </label>
+                        </div>
                     </form>
                 </div>
             </div>

@@ -15,6 +15,7 @@ h1 {
     width: unset;
     margin: auto;
     position: relative;
+    padding-bottom: 30px;
 }
 
 #container a {

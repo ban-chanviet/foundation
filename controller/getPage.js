@@ -22,9 +22,9 @@ exports.getall = (req, res) => {
         case '/thankyou':
             res.render('thankyou')
             break;
-        case '/test':
-            res.render('test')
-            break;
+            // case '/test':
+            //     res.render('test')
+            //     break;
         default:
             res.render('404')
             break;

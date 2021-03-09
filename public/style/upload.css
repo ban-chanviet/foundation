@@ -136,3 +136,22 @@ button:hover {
     cursor: pointer;
     width: 100%;
 }
+
+.alignAgain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 10px;
+}
+
+.alignAgain input {
+    width: min-content;
+    margin-right: 10px;
+}
+
+.alignAgain label {
+    /* margin-left: 10px; */
+    text-align: center;
+}
