@@ -1,0 +1,87 @@
+<%- include('includes/skeletonHead.ejs') %>
+    <link rel="stylesheet" href="style/test.css">
+    <link rel="stylesheet" href="style/upload.css">
+    <script>
+        alert('vui lòng chỉ chọn file .pdf, .doc hoặc .docx!')
+    </script>
+    <div class="container">
+        <div class="box">
+            <div class="headerForParagraph">
+                <h3>học bổng năm học 2021-2022</h3>
+            </div>
+            <div class="border paddingparagraph">
+                <div>
+                    <h5>
+                        đối tượng
+                    </h5>
+                    <p>
+                        sinh viên năm 1-3 khoa KTHH ĐH Bách Khoa Tp.HCM
+                    </p>
+                </div>
+                <div>
+                    <h5>
+                        tiêu chuẩn
+                    </h5>
+                    <p>
+                        có hoàn cảnh khó khăn, có một ước mơ
+                    </p>
+                </div>
+                <div>
+                    <h5>
+                        học bổng
+                    </h5>
+                    <p>
+                        5.000.000/sinh viên
+                    </p>
+                </div>
+                <div>
+                    <h5>
+                        hồ sơ
+                    </h5>
+                    <p>
+                        bài luận max 2000 chữ, sơ lược hoàn cảnh khó khăn, bảng điểm
+                    </p>
+                </div>
+                <div>
+                    <h5>
+                        thời gian
+                    </h5>
+                    <p>
+                        nhận hồ sơ: 1/8 - 30/8 <br> thông báo kết quả: 2-9
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="headerForParagraph">
+                <h3>
+                    ứng tuyển
+                </h3>
+            </div>
+            <div class="border">
+                <div class="contact-us">
+                    <form action="/uploadcv" method="POST" enctype="multipart/form-data">
+                        <label for="name">tên <em>&#x2a;</em></label>
+                        <input id="name" name="name" required="" type="text" />
+                        <label for="email">email <em>&#x2a;</em></label>
+                        <input id="email" name="email" required="" type="email" />
+                        <label for="phone">mã số sinh viên <em>&#x2a;</em></label>
+                        <input required id="phone" name="phone" />
+                        <label for="sampleFile">chọn file .doc, .docx, hoặc pdf <em>&#x2a;</em></label>
+                        <div class="file-upload-wrapper">
+                            <input name="sampleFile" type="file" class="file-upload-field" value="">
+                        </div>
+                        <div class="alignAgain">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="okay" required>
+                            <label for="vehicle1"> đồng ý vấn đề thông tin cá nhân</label><br>
+                        </div>
+                        <button id="apply">ứng tuyển</button>
+                        <div style="padding: 10px;">
+                            <label for="dummy"><em>&#x2a;</em> tất cả thông tin cá nhân chỉ dùng để xét duyệt học bổng </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include('includes/skeletonFoot.ejs') %>

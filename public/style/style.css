@@ -1,0 +1,157 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Roboto:wght@100&family=Source+Sans+Pro:wght@200&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap'); */
+
+
+/* @import url(//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light);
+@font-face {
+    font-family: "BrandonGrotW01-Light";
+    src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot");
+    src: url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.woff") format("woff"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6dd2f2510b4a00a5461b2455928209c2.svg#BrandonGrotW01-Light") format("svg");
+} */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-font: 'Tajawal', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+    --main-font-color-dark: #252525;
+    --secondary-font-color: #c59d5f;
+    --body-font-color: black;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+li a img {
+    width: 60px;
+    height: 50px;
+}
+
+body,
+html {
+    height: 100%;
+    /* background-color: #252525; */
+}
+
+header {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aliceblue;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out; */
+}
+
+.navbar {
+    font-size: 1.6rem;
+    padding-bottom: 50px;
+    margin: auto;
+}
+
+ul {
+    width: 100%;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.main-nav li a {
+    color: var(--body-font-color);
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+    margin-top: 50px;
+}
+
+.hideImg {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+        padding-bottom: 35px;
+    }
+    header {
+        height: 20%;
+    }
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .main-nav li {
+        margin: 0;
+    }
+    .nav-links {
+        margin-left: 40px;
+    }
+    .logo {
+        margin-top: 0;
+    }
+    .navbar-toggle {
+        display: none;
+    }
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(85, 85, 85);
+    }
+    header nav a img {
+        width: 90px;
+        height: 60px;
+    }
+    header,
+    body,
+    html {
+        background-color: unset;
+    }
+}
