@@ -1,6 +1,27 @@
 <%- include('includes/skeletonHead.ejs') %>
-    <link rel="stylesheet" href="/style/gioithieu.css">
-    <div class="container">
+    <link rel="stylesheet" href="/style/chuyencu.css">
+
+    <div class="story">
+        <h2 style="padding-bottom: 5px;"> Chuyện về các bạn đã nhận học bổng </h2>
+        <h2 style="padding-top: 20px; padding-bottom: 20px; font-size: 1.6rem;">Năm học
+            <%= data.year %>
+        </h2>
+        <div class="list">
+            <% data.students.forEach((student, index) => { %>
+                <a href="#">
+                    <h2>
+                        <div>
+                            <%= index + 1 %>
+                        </div>
+                        <%= student.name %> -
+                            <%= student.home %>
+                    </h2>
+
+                </a>
+                <% }) %>
+
+        </div>
     </div>
+
 
     <%- include('includes/skeletonFoot.ejs') %>

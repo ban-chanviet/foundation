@@ -5,7 +5,7 @@ exports.getall = (req, res) => {
             res.render('home')
             break;
         case '/chuyencu':
-            res.render('chuyencu', { students: [{ name: 'long', year: '2021-2022' }] })
+            res.render('chuyencu', { data: { students: [{ name: 'long bui bao', home: 'gia lai' }, { name: 'bui bao long', home: 'gia lai' }, { name: 'long bao bui', home: 'gia lai' }], year: '2021-2022' } })
             break;
         case '/gopsuc':
             res.render('support')
