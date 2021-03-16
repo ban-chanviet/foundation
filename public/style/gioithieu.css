@@ -6,7 +6,7 @@
     /* width: 800px; */
     height: 491px;
     background-image: url("/images/others/rsz_image.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
     /* object-fit: scale-down; */
@@ -22,7 +22,7 @@ div p {
 }
 
 .padding {
-    padding: 50px;
+    padding: 40px;
 }
 
 @media screen and (min-width: 768px) {

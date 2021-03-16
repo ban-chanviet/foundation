@@ -11,6 +11,10 @@
     /* align-items: center; */
 }
 
+div h2 {
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
     .story {
         padding-left: 14%;
@@ -21,6 +25,9 @@
         text-align: center;
         white-space: unset;
         align-items: flex-start;
+    }
+    div h2 {
+        text-align: unset;
     }
 }
 
