@@ -16,7 +16,7 @@
 
 div p {
     text-align: center;
-    font-size: 1.6em;
+    font-size: 4vh;
     font-weight: bolder;
 }
 
@@ -35,5 +35,8 @@ div p {
         /* object-fit: scale-down; */
         margin: auto;
         margin-bottom: 50px;
+    }
+    div p {
+        font-size: 4vh;
     }
 }
