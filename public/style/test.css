@@ -56,7 +56,7 @@ h5 {
 
 h3 {
     font-size: unset;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .alignTextInBox {

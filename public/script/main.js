@@ -17,3 +17,7 @@ navBarToggle.addEventListener('click', function() {
     }
 
 });
+
+let heightOfH3 = document.getElementById('h3Tag').clientHeight;
+let firstBox = document.getElementById('firstBox');
+firstBox.style.padding = `${heightOfH3 + 5}px 7%`
