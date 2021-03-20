@@ -160,3 +160,7 @@ button:hover {
     /* margin-left: 10px; */
     text-align: center;
 }
+
+.alignCenter {
+    text-align: center;
+}
