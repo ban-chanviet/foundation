@@ -1,15 +1,9 @@
 .container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     width: 100%;
-    /* width: 800px; */
     height: 491px;
     background-image: url("/images/others/rsz_image.png");
-    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position: right center;
-    /* object-fit: scale-down; */
     margin: auto;
     margin-bottom: 50px;
 }
@@ -32,7 +26,6 @@ div p {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
-        /* object-fit: scale-down; */
         margin: auto;
         margin-bottom: 50px;
     }

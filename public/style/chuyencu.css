@@ -8,7 +8,6 @@
     padding-left: unset;
     padding-right: unset;
     white-space: unset;
-    /* align-items: center; */
 }
 
 div h2 {
@@ -43,7 +42,6 @@ div h2 {
 
 .list a {
     text-decoration: none;
-    /* font-size: 1.6rem; */
     color: black;
 }
 
@@ -56,5 +54,4 @@ a div {
     border-radius: 50%;
     text-align: center;
     margin: 5px 5px;
-    /* font-size: unset; */
 }
