@@ -23,8 +23,6 @@
     padding-bottom: 70px;
     width: 80%;
     margin: auto;
-    /* margin-bottom: 60px; */
-    /* height: 60%; */
 }
 
 .paddingparagraph {
@@ -33,7 +31,6 @@
 
 .box {
     width: 100%;
-    /* height: 100% !important; */
 }
 
 @media screen and (min-width: 768px) {
@@ -56,12 +53,10 @@ h5 {
 
 h3 {
     font-size: unset;
-    /* white-space: nowrap; */
 }
 
 .alignTextInBox {
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: space-between;
 }
